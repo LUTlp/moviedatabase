@@ -2,6 +2,6 @@
 <p>Find me in app/views/movie/index.html.erb</p>
 
 <% @movies = Movie.all%>
-<% @movies.each do |movie| %>
+<%= @movies.each do |movie| %>
     <p><%= movie.title %>, réalisé par <%= movie.director %>, sorti en <%= movie.release_year %></p>
 <% end %>
